@@ -27,7 +27,7 @@ class NotSOLIDServiceScheduler: NSObject {
     
     // MARK: - Private methods
     
-    private func timerDidFire(timer: NSTimer) {
+    @objc private func timerDidFire(timer: NSTimer) {
         self.timerTick++
         self.runServicesWithTick(self.timerTick)
     }
@@ -36,7 +36,9 @@ class NotSOLIDServiceScheduler: NSObject {
         // decides frequencies
         if ((tick % 1) == 0) {
             self.runTimelineUpdateService()
-        } else if ((tick % 2) == 0) {
+        }
+        
+        if ((tick % 2) == 0) {
             self.runProfileUpdateService()
         }
     }

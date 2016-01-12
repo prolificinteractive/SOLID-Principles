@@ -11,7 +11,7 @@ import Foundation
 struct NotSOLIDProfileService {
     
     static func fetchProfileForUserID(userID: String) {
-        print("fetched profile")
+        print("[Not SOLID] fetched profile")
     }
     
 }

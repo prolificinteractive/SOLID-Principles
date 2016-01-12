@@ -13,9 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    enum ClientType {
+        case SOLID
+        case NotSOLID
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let clientType: ClientType = .SOLID
+        let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
+        
+        client.startScheduler()
+        
         return true
     }
 

@@ -39,7 +39,7 @@ class SOLIDTimer: Timer {
     
     // MARK: - Private methods
     
-    private func timerDidFire(timer: NSTimer) {
+    @objc private func timerDidFire(timer: NSTimer) {
         self.tick++
         
         self.tickAction?(self.tick)

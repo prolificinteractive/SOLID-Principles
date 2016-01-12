@@ -31,7 +31,7 @@ struct SOLIDTimelineService: Service {
     // MARK: - Private methods
     
     private func fetchTimelineForUserID(userID: String) {
-        print("fetched timeline")
+        print("[SOLID] fetched timeline")
     }
     
 }
