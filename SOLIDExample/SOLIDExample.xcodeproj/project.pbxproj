@@ -17,6 +17,13 @@
 		2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */; };
 		2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */; };
 		2F73018B1C457AF1009932F8 /* SOLIDServiceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */; };
+		2F73018D1C458C98009932F8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73018C1C458C98009932F8 /* Timer.swift */; };
+		2F73018F1C458CCD009932F8 /* SOLIDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73018E1C458CCD009932F8 /* SOLIDTimer.swift */; };
+		2F7301911C458D0C009932F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301901C458D0C009932F8 /* Service.swift */; };
+		2F7301931C458F86009932F8 /* SOLIDTimelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301921C458F86009932F8 /* SOLIDTimelineService.swift */; };
+		2F7301951C458FA0009932F8 /* SOLIDProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301941C458FA0009932F8 /* SOLIDProfileService.swift */; };
+		2F7301971C458FCA009932F8 /* SOLIDServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301961C458FCA009932F8 /* SOLIDServiceFactory.swift */; };
+		2F7301991C458FF2009932F8 /* SOLIDSchedulerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301981C458FF2009932F8 /* SOLIDSchedulerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDTimelineService.swift; sourceTree = "<group>"; };
 		2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDProfileService.swift; sourceTree = "<group>"; };
 		2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDServiceScheduler.swift; sourceTree = "<group>"; };
+		2F73018C1C458C98009932F8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		2F73018E1C458CCD009932F8 /* SOLIDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDTimer.swift; sourceTree = "<group>"; };
+		2F7301901C458D0C009932F8 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2F7301921C458F86009932F8 /* SOLIDTimelineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDTimelineService.swift; sourceTree = "<group>"; };
+		2F7301941C458FA0009932F8 /* SOLIDProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDProfileService.swift; sourceTree = "<group>"; };
+		2F7301961C458FCA009932F8 /* SOLIDServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDServiceFactory.swift; sourceTree = "<group>"; };
+		2F7301981C458FF2009932F8 /* SOLIDSchedulerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDSchedulerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +141,14 @@
 		2F7301871C457ACB009932F8 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				2F7301981C458FF2009932F8 /* SOLIDSchedulerFactory.swift */,
+				2F7301961C458FCA009932F8 /* SOLIDServiceFactory.swift */,
 				2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */,
+				2F7301921C458F86009932F8 /* SOLIDTimelineService.swift */,
+				2F7301941C458FA0009932F8 /* SOLIDProfileService.swift */,
+				2F73018E1C458CCD009932F8 /* SOLIDTimer.swift */,
+				2F7301901C458D0C009932F8 /* Service.swift */,
+				2F73018C1C458C98009932F8 /* Timer.swift */,
 			);
 			path = SOLID;
 			sourceTree = "<group>";
@@ -233,12 +254,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7301931C458F86009932F8 /* SOLIDTimelineService.swift in Sources */,
 				2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */,
 				2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */,
+				2F73018D1C458C98009932F8 /* Timer.swift in Sources */,
+				2F7301971C458FCA009932F8 /* SOLIDServiceFactory.swift in Sources */,
+				2F7301951C458FA0009932F8 /* SOLIDProfileService.swift in Sources */,
+				2F7301991C458FF2009932F8 /* SOLIDSchedulerFactory.swift in Sources */,
 				2F73015F1C4575D2009932F8 /* ViewController.swift in Sources */,
 				2F73018B1C457AF1009932F8 /* SOLIDServiceScheduler.swift in Sources */,
+				2F7301911C458D0C009932F8 /* Service.swift in Sources */,
 				2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */,
 				2F73015D1C4575D2009932F8 /* AppDelegate.swift in Sources */,
+				2F73018F1C458CCD009932F8 /* SOLIDTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
