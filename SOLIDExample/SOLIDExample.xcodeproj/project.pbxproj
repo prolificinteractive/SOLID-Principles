@@ -13,6 +13,9 @@
 		2F7301641C4575D2009932F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7301631C4575D2009932F8 /* Assets.xcassets */; };
 		2F7301671C4575D2009932F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7301651C4575D2009932F8 /* LaunchScreen.storyboard */; };
 		2F7301721C4575D2009932F8 /* SOLIDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301711C4575D2009932F8 /* SOLIDExampleTests.swift */; };
+		2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301801C457796009932F8 /* NotSOLIDServiceScheduler.swift */; };
+		2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */; };
+		2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		2F73016D1C4575D2009932F8 /* SOLIDExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLIDExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7301711C4575D2009932F8 /* SOLIDExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLIDExampleTests.swift; sourceTree = "<group>"; };
 		2F7301731C4575D2009932F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7301801C457796009932F8 /* NotSOLIDServiceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDServiceScheduler.swift; sourceTree = "<group>"; };
+		2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDTimelineService.swift; sourceTree = "<group>"; };
+		2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDProfileService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		2F73015B1C4575D2009932F8 /* SOLIDExample */ = {
 			isa = PBXGroup;
 			children = (
+				2F73017C1C457658009932F8 /* TwitterExample */,
 				2F73015C1C4575D2009932F8 /* AppDelegate.swift */,
 				2F73015E1C4575D2009932F8 /* ViewController.swift */,
 				2F7301601C4575D2009932F8 /* Main.storyboard */,
@@ -94,6 +101,24 @@
 				2F7301731C4575D2009932F8 /* Info.plist */,
 			);
 			path = SOLIDExampleTests;
+			sourceTree = "<group>";
+		};
+		2F73017C1C457658009932F8 /* TwitterExample */ = {
+			isa = PBXGroup;
+			children = (
+				2F73017D1C457746009932F8 /* NotSOLID */,
+			);
+			path = TwitterExample;
+			sourceTree = "<group>";
+		};
+		2F73017D1C457746009932F8 /* NotSOLID */ = {
+			isa = PBXGroup;
+			children = (
+				2F7301801C457796009932F8 /* NotSOLIDServiceScheduler.swift */,
+				2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */,
+				2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */,
+			);
+			path = NotSOLID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */,
+				2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */,
 				2F73015F1C4575D2009932F8 /* ViewController.swift in Sources */,
+				2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */,
 				2F73015D1C4575D2009932F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
