@@ -13,9 +13,7 @@ class NotSOLIDServiceScheduler: NSObject {
     private var serviceTimer: NSTimer? = nil
     private var timerTick: Int = 0
     
-    // MARK: - Protocol conformance
-    
-    // MARK: ServiceScheduler
+    // MARK: - Public methods
     
     func start() {
         // starts timer

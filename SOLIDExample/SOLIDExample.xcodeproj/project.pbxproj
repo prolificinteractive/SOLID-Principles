@@ -16,6 +16,7 @@
 		2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301801C457796009932F8 /* NotSOLIDServiceScheduler.swift */; };
 		2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */; };
 		2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */; };
+		2F73018B1C457AF1009932F8 /* SOLIDServiceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2F7301801C457796009932F8 /* NotSOLIDServiceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDServiceScheduler.swift; sourceTree = "<group>"; };
 		2F7301821C4579C4009932F8 /* NotSOLIDTimelineService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDTimelineService.swift; sourceTree = "<group>"; };
 		2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDProfileService.swift; sourceTree = "<group>"; };
+		2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDServiceScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2F73017D1C457746009932F8 /* NotSOLID */,
+				2F7301871C457ACB009932F8 /* SOLID */,
 			);
 			path = TwitterExample;
 			sourceTree = "<group>";
@@ -119,6 +122,14 @@
 				2F7301841C4579DF009932F8 /* NotSOLIDProfileService.swift */,
 			);
 			path = NotSOLID;
+			sourceTree = "<group>";
+		};
+		2F7301871C457ACB009932F8 /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				2F73018A1C457AF1009932F8 /* SOLIDServiceScheduler.swift */,
+			);
+			path = SOLID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */,
 				2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */,
 				2F73015F1C4575D2009932F8 /* ViewController.swift in Sources */,
+				2F73018B1C457AF1009932F8 /* SOLIDServiceScheduler.swift in Sources */,
 				2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */,
 				2F73015D1C4575D2009932F8 /* AppDelegate.swift in Sources */,
 			);
