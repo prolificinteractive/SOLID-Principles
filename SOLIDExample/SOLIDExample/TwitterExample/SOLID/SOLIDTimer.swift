@@ -33,10 +33,6 @@ class SOLIDTimer: Timer {
         self.internalTimer = nil
     }
     
-    func currentTick() -> Int {
-        return self.tick
-    }
-    
     // MARK: - Private methods
     
     @objc private func timerDidFire(timer: NSTimer) {

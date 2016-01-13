@@ -10,13 +10,20 @@ import Foundation
 
 class NotSOLIDServiceScheduler: NSObject {
     
-    private var serviceTimer: NSTimer? = nil
-    private var timerTick: Int = 0
+    let userID: String
+    private var serviceTimer: NSTimer?
+    private var timerTick: Int
     
     // MARK: - Public methods
     
+    init(userID: String) {
+        self.userID = userID
+        self.serviceTimer = nil
+        self.timerTick = 0
+    }
+    
+    // Responsibility: starts timer
     func start() {
-        // starts timer
         self.serviceTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerDidFire:", userInfo: nil, repeats: true)
     }
     
@@ -32,8 +39,8 @@ class NotSOLIDServiceScheduler: NSObject {
         self.runServicesWithTick(self.timerTick)
     }
     
+    // Responsibility: decides frequencies
     private func runServicesWithTick(tick: Int) {
-        // decides frequencies
         if ((tick % 1) == 0) {
             self.runTimelineUpdateService()
         }
@@ -43,7 +50,7 @@ class NotSOLIDServiceScheduler: NSObject {
         }
     }
     
-    // executes services
+    // Responsibility: Executes specific services
     private func runTimelineUpdateService() {
         NotSOLIDTimelineService.fetchTimelineForUserID("123")
     }

@@ -11,7 +11,7 @@ import Foundation
 struct NotSOLIDClient: Client {
     
     func startScheduler() {
-        let serviceScheduler = NotSOLIDServiceScheduler()
+        let serviceScheduler = NotSOLIDServiceScheduler(userID: "123")
         
         serviceScheduler.start()
     }

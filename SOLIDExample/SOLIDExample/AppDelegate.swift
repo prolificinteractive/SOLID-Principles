@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let clientType: ClientType = .SOLID
+        let clientType: ClientType = .NotSOLID
         let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
         
         client.startScheduler()
