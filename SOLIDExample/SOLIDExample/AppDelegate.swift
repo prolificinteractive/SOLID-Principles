@@ -20,10 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let clientType: ClientType = .SOLID
-        let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
+//        let clientType: ClientType = .SOLID
+//        let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
+//        
+//        client.startScheduler()
         
-        client.startScheduler()
+        let rectangle = Rectangle()
+        rectangle.setWidth(3.0)
+        rectangle.setHeight(7.0)
+        
+        let square = Square()
+        square.setWidth(3.0)
+        square.setHeight(7.0)
+        
+        print("Rectangle: (\(rectangle.width()), \(rectangle.height()))")
+        print("Square: (\(square.width()), \(square.height()))")
         
         return true
     }
