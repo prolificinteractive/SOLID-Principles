@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SOLIDServiceScheduler {
+struct SOLIDServiceScheduler: ServiceScheduler {
     
     // MARK: - Public methods
     
