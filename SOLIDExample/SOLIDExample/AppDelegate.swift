@@ -20,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        // Twitter Example
+        // Twitter Example - SRP, OCP, DIP
         
         let clientType: ClientType = .SOLID
         let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
         
         client.startScheduler()
 
-        // Liskov Example
+        // Square/Rectangle Example Example - LSP
         
 //        let rect1 = NotSOLIDRectangle()
 //        rect1.setWidth(3.0)
@@ -45,6 +45,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        
 //        print("[SOLID] Rectangle: (width: \(rect2.width), height: \(rect2.height)), area: \(rect2.area())")
 //        print("[SOLID] Square: (width: \(square2.side), height: \(square2.side)), area: \(square2.area())")
+        
+        // ATM Example - ISP
         
         return true
     }
