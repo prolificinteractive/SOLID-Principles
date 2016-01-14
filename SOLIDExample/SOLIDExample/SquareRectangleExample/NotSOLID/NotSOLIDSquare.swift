@@ -1,5 +1,5 @@
 //
-//  Square.swift
+//  NotSOLIDSquare.swift
 //  SOLIDExample
 //
 //  Created by Harlan Kellaway on 1/14/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Square: Rectangle {
+class NotSOLIDSquare: NotSOLIDRectangle {
     
     override func setHeight(value: Double) {
         self.myHeight = value

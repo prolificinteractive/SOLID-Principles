@@ -1,5 +1,5 @@
 //
-//  Rectangle.swift
+//  NotSOLIDRectangle.swift
 //  SOLIDExample
 //
 //  Created by Harlan Kellaway on 1/14/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Rectangle {
+class NotSOLIDRectangle {
     
     internal var myHeight: Double = 0
     internal var myWidth: Double = 0

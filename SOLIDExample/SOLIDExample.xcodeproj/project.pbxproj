@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2F5BCA6C1C485B2E004EB7E6 /* ServiceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA6B1C485B2E004EB7E6 /* ServiceScheduler.swift */; };
-		2F5BCA711C485E93004EB7E6 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA701C485E93004EB7E6 /* Rectangle.swift */; };
-		2F5BCA731C485EEA004EB7E6 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA721C485EEA004EB7E6 /* Square.swift */; };
+		2F5BCA711C485E93004EB7E6 /* NotSOLIDRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA701C485E93004EB7E6 /* NotSOLIDRectangle.swift */; };
+		2F5BCA731C485EEA004EB7E6 /* NotSOLIDSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA721C485EEA004EB7E6 /* NotSOLIDSquare.swift */; };
+		2F5BCA751C486340004EB7E6 /* SOLIDShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA741C486340004EB7E6 /* SOLIDShape.swift */; };
+		2F5BCA771C486358004EB7E6 /* SOLIDRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA761C486358004EB7E6 /* SOLIDRectangle.swift */; };
+		2F5BCA791C48648B004EB7E6 /* SOLIDSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BCA781C48648B004EB7E6 /* SOLIDSquare.swift */; };
 		2F73015D1C4575D2009932F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73015C1C4575D2009932F8 /* AppDelegate.swift */; };
 		2F73015F1C4575D2009932F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F73015E1C4575D2009932F8 /* ViewController.swift */; };
 		2F7301621C4575D2009932F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7301601C4575D2009932F8 /* Main.storyboard */; };
@@ -44,8 +47,11 @@
 
 /* Begin PBXFileReference section */
 		2F5BCA6B1C485B2E004EB7E6 /* ServiceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceScheduler.swift; sourceTree = "<group>"; };
-		2F5BCA701C485E93004EB7E6 /* Rectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
-		2F5BCA721C485EEA004EB7E6 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		2F5BCA701C485E93004EB7E6 /* NotSOLIDRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDRectangle.swift; sourceTree = "<group>"; };
+		2F5BCA721C485EEA004EB7E6 /* NotSOLIDSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotSOLIDSquare.swift; sourceTree = "<group>"; };
+		2F5BCA741C486340004EB7E6 /* SOLIDShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDShape.swift; sourceTree = "<group>"; };
+		2F5BCA761C486358004EB7E6 /* SOLIDRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDRectangle.swift; sourceTree = "<group>"; };
+		2F5BCA781C48648B004EB7E6 /* SOLIDSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLIDSquare.swift; sourceTree = "<group>"; };
 		2F7301591C4575D2009932F8 /* SOLIDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOLIDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F73015C1C4575D2009932F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F73015E1C4575D2009932F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +108,8 @@
 		2F5BCA6E1C485D6C004EB7E6 /* NotSOLID */ = {
 			isa = PBXGroup;
 			children = (
-				2F5BCA701C485E93004EB7E6 /* Rectangle.swift */,
-				2F5BCA721C485EEA004EB7E6 /* Square.swift */,
+				2F5BCA701C485E93004EB7E6 /* NotSOLIDRectangle.swift */,
+				2F5BCA721C485EEA004EB7E6 /* NotSOLIDSquare.swift */,
 			);
 			path = NotSOLID;
 			sourceTree = "<group>";
@@ -111,6 +117,9 @@
 		2F5BCA6F1C485D6C004EB7E6 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
+				2F5BCA741C486340004EB7E6 /* SOLIDShape.swift */,
+				2F5BCA761C486358004EB7E6 /* SOLIDRectangle.swift */,
+				2F5BCA781C48648B004EB7E6 /* SOLIDSquare.swift */,
 			);
 			path = SOLID;
 			sourceTree = "<group>";
@@ -299,20 +308,23 @@
 				2F5BCA6C1C485B2E004EB7E6 /* ServiceScheduler.swift in Sources */,
 				2F7301931C458F86009932F8 /* SOLIDTimelineService.swift in Sources */,
 				2F7301851C4579DF009932F8 /* NotSOLIDProfileService.swift in Sources */,
-				2F5BCA711C485E93004EB7E6 /* Rectangle.swift in Sources */,
+				2F5BCA751C486340004EB7E6 /* SOLIDShape.swift in Sources */,
+				2F5BCA711C485E93004EB7E6 /* NotSOLIDRectangle.swift in Sources */,
 				2F7301831C4579C4009932F8 /* NotSOLIDTimelineService.swift in Sources */,
 				2F73018D1C458C98009932F8 /* Timer.swift in Sources */,
 				2F7301971C458FCA009932F8 /* SOLIDServiceFactory.swift in Sources */,
 				2F7301951C458FA0009932F8 /* SOLIDProfileService.swift in Sources */,
 				2F73019F1C459105009932F8 /* Client.swift in Sources */,
+				2F5BCA791C48648B004EB7E6 /* SOLIDSquare.swift in Sources */,
 				2F73019D1C45906A009932F8 /* SOLIDClient.swift in Sources */,
 				2F7301991C458FF2009932F8 /* SOLIDSchedulerFactory.swift in Sources */,
 				2F73015F1C4575D2009932F8 /* ViewController.swift in Sources */,
 				2F73019B1C45902A009932F8 /* NotSOLIDClient.swift in Sources */,
 				2F73018B1C457AF1009932F8 /* SOLIDServiceScheduler.swift in Sources */,
+				2F5BCA771C486358004EB7E6 /* SOLIDRectangle.swift in Sources */,
 				2F7301911C458D0C009932F8 /* Service.swift in Sources */,
 				2F7301811C457796009932F8 /* NotSOLIDServiceScheduler.swift in Sources */,
-				2F5BCA731C485EEA004EB7E6 /* Square.swift in Sources */,
+				2F5BCA731C485EEA004EB7E6 /* NotSOLIDSquare.swift in Sources */,
 				2F73015D1C4575D2009932F8 /* AppDelegate.swift in Sources */,
 				2F73018F1C458CCD009932F8 /* SOLIDTimer.swift in Sources */,
 			);
