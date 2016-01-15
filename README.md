@@ -10,6 +10,10 @@ To report a bug or enhancement request, feel free to file an issue under the res
 
 If you wish to contribute to the project, fork this repo and submit a pull request.
 
+## Credits
+
+* [Practically SOLID](https://speakerdeck.com/dannyhertz/practically-solid-1) by Danny Hertz
+
 ## License
 
 SOLID & DRY is Copyright (c) 2016 Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
