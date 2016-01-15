@@ -1,5 +1,5 @@
 //
-//  NotSOLIDATMConsole.swift
+//  NotSOLIDConsoleATM.swift
 //  SOLIDExample
 //
 //  Created by Harlan Kellaway on 1/14/16.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct NotSOLIDATMConsole: NotSOLIDATM {
+struct NotSOLIDConsoleATM: NotSOLIDATM {
     
     // MARK: - Protocol conformance
     
-    // MARK: NotSOLIDATM
+    // MARK: ATM
     
     func requestDepositAmount() {
         print("[Not SOLID] Requested deposit")

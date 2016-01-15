@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    enum ClientType {
+    enum TwitterClientType {
         case SOLID
         case NotSOLID
     }
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Twitter Example - SRP, OCP, DIP
         
-        let clientType: ClientType = .SOLID
+        let clientType: TwitterClientType = .SOLID
         let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
         
         client.startScheduler()
@@ -47,6 +47,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print("[SOLID] Square: (width: \(square2.side), height: \(square2.side)), area: \(square2.area())")
         
         // ATM Example - ISP
+        
+//        let atmUI = NotSOLIDConsoleATM()
+//        let depositTransaction1 = NotSOLIDDepositTransaction(ui: atmUI)
+//        
+//        depositTransaction1.execute()
+//        
+//        let depositUI = SOLIDDepositUI()
+//        let depositTransaction2 = SOLIDDepositTransaction(ui: depositUI)
+//        
+//        depositTransaction2.execute()
         
         return true
     }
