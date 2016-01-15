@@ -16,7 +16,7 @@ If you wish to contribute to the project, fork this repo and submit a pull reque
 
 ## License
 
-SOLID & DRY is Copyright (c) 2016 Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
+This project is Copyright (c) 2016 Prolific Interactive. It may be redistributed under the terms specified in the [LICENSE] file.
 
 [LICENSE]: /LICENSE
 
@@ -24,4 +24,4 @@ SOLID & DRY is Copyright (c) 2016 Prolific Interactive. It may be redistributed 
 
 ![prolific](https://s3.amazonaws.com/prolificsitestaging/logos/Prolific_Logo_Full_Color.png)
 
-SOLID & DRY is maintained and funded by Prolific Interactive. The names and logos are trademarks of Prolific Interactive.
+This project is maintained and funded by Prolific Interactive. The names and logos are trademarks of Prolific Interactive.
