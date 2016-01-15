@@ -21,11 +21,11 @@ struct SOLIDTimelineService: Service {
     // MARK: - Public methods
     
     func frequency() -> Int {
-        return self.freq
+        return freq
     }
     
     func execute() {
-        self.fetchTimelineForUserID(self.userID)
+        fetchTimelineForUserID(userID)
     }
     
     // MARK: - Private methods

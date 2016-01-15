@@ -17,6 +17,6 @@ struct SOLIDSquare: SOLIDShape {
     // MARK: SOLIDShape
  
     func area() -> Double {
-        return self.side * 2
+        return side * 2
     }
 }

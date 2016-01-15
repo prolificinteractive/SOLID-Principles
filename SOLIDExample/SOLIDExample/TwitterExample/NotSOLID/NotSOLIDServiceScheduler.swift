@@ -24,29 +24,29 @@ class NotSOLIDServiceScheduler: NSObject {
     
     // Responsibility: starts timer
     func start() {
-        self.serviceTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerDidFire:", userInfo: nil, repeats: true)
+        serviceTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerDidFire:", userInfo: nil, repeats: true)
     }
     
     func stop() {
-        self.serviceTimer?.invalidate()
-        self.serviceTimer = nil
+        serviceTimer?.invalidate()
+        serviceTimer = nil
     }
     
     // MARK: - Private methods
     
     @objc private func timerDidFire(timer: NSTimer) {
-        self.timerTick++
-        self.runServicesWithTick(self.timerTick)
+        timerTick++
+        runServicesWithTick(self.timerTick)
     }
     
     // Responsibility: decides frequencies
     private func runServicesWithTick(tick: Int) {
         if ((tick % 1) == 0) {
-            self.runTimelineUpdateService()
+            runTimelineUpdateService()
         }
         
         if ((tick % 2) == 0) {
-            self.runProfileUpdateService()
+            runProfileUpdateService()
         }
     }
     

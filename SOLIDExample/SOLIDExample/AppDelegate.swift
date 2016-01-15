@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         client.startScheduler()
 
-        // Square/Rectangle Example Example - LSP
+        // Square/Rectangle Example - LSP
         
 //        let rect1 = NotSOLIDRectangle()
 //        rect1.setWidth(3.0)

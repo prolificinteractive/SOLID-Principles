@@ -18,7 +18,7 @@ struct SOLIDRectangle: SOLIDShape {
     // MARK: SOLIDShape
     
     func area() -> Double {
-        return self.width * self.height
+        return width * height
     }
     
 }

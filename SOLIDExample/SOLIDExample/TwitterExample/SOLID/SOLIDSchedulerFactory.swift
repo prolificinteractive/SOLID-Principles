@@ -11,7 +11,7 @@ import Foundation
 struct SOLIDSchedulerFactory {
     
     static func twitterServiceSchedulerWithUserID(userID: String) -> ServiceScheduler {
-        let timer = self.clockTimer()
+        let timer = clockTimer()
         var twitterScheduler = SOLIDServiceScheduler(timer: timer)
         
         twitterScheduler.registerService(SOLIDServiceFactory.twitterTimelineServiceWithUserID(userID))

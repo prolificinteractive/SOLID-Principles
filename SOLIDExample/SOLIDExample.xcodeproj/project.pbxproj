@@ -167,9 +167,9 @@
 		2F5BCA7C1C4869D9004EB7E6 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
-				2F5BCA911C487255004EB7E6 /* SOLIDDepositTransaction.swift */,
-				2F5BCA931C48727D004EB7E6 /* SOLIDDepositUI.swift */,
 				2F5BCA8F1C487210004EB7E6 /* SOLIDATM.swift */,
+				2F5BCA931C48727D004EB7E6 /* SOLIDDepositUI.swift */,
+				2F5BCA911C487255004EB7E6 /* SOLIDDepositTransaction.swift */,
 				2F5BCA871C487145004EB7E6 /* DepositUI.swift */,
 				2F5BCA8D1C4871F6004EB7E6 /* TransferUI.swift */,
 				2F5BCA8B1C4871D6004EB7E6 /* WithdrawalUI.swift */,

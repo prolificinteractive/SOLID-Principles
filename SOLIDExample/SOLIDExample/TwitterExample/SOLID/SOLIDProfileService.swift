@@ -21,11 +21,11 @@ struct SOLIDProfileService: Service {
     // MARK: - Public methods
     
     func frequency() -> Int {
-        return self.freq
+        return freq
     }
     
     func execute() {
-        self.fetchProfileForUserID(self.userID)
+        self.fetchProfileForUserID(userID)
     }
     
     // MARK: - Private methods

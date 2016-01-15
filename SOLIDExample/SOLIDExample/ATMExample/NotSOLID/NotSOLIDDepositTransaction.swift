@@ -17,8 +17,8 @@ struct NotSOLIDDepositTransaction: Transaction {
     // MARK: Transaction
     
     func execute() {
-        self.ui.requestDepositAmount()
-        self.ui.requestWithdrawalAmount() // OOPS! DepositTransaction should NOT be able to do this
+        ui.requestDepositAmount()
+        ui.requestWithdrawalAmount() // OOPS! DepositTransaction should NOT be able to do this
     }
     
 }

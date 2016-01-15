@@ -14,19 +14,19 @@ class NotSOLIDRectangle {
     internal var myWidth: Double = 0
     
     func setHeight(value: Double) {
-        self.myHeight = value
+        myHeight = value
     }
     
     func setWidth(value: Double) {
-        self.myWidth = value
+        myWidth = value
     }
     
     func height() -> Double {
-        return self.myHeight
+        return myHeight
     }
     
     func width() -> Double {
-        return self.myWidth
+        return myWidth
     }
     
     func area() -> Double {

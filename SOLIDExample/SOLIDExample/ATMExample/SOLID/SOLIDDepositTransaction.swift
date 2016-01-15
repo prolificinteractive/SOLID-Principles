@@ -13,7 +13,7 @@ struct SOLIDDepositTransaction: Transaction {
     let ui: DepositUI
     
     func execute() {
-        self.ui.requestDepositAmount()
+        ui.requestDepositAmount()
     }
     
 }

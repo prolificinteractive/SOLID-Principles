@@ -21,32 +21,32 @@ struct SOLIDServiceScheduler: ServiceScheduler {
     }
     
     mutating func registerService(service: Service) {
-        self.services.append(service)
+        services.append(service)
     }
     
     func start() {
-        self.timer.onTick() {
+        timer.onTick() {
             tick in
             
             self.timerDidTick(tick)
         }
         
-        self.timer.start()
+        timer.start()
     }
     
     func stop() {
-        self.timer.stop()
+        timer.stop()
     }
     
     // MARK: - Private methods
     
     private func timerDidTick(tick: Int) {
-        self.runServicesWithTick(tick)
+        runServicesWithTick(tick)
     }
     
     private func runServicesWithTick(tick: Int) {
-        for service in self.services {
-            if (self.shouldExecuteFrequency(service.frequency(), onTick:tick)) {
+        for service in services {
+            if (shouldExecuteFrequency(service.frequency(), onTick:tick)) {
                 service.execute()
             }
         }

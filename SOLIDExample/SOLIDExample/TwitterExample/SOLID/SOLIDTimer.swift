@@ -21,24 +21,24 @@ class SOLIDTimer: Timer {
     }
     
     func onTick(action: Int -> ()) {
-        self.tickAction = action
+        tickAction = action
     }
     
     func start() {
-        self.internalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerDidFire:", userInfo: nil, repeats: true)
+        internalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "timerDidFire:", userInfo: nil, repeats: true)
     }
     
     func stop() {
-        self.internalTimer?.invalidate()
-        self.internalTimer = nil
+        internalTimer?.invalidate()
+        internalTimer = nil
     }
     
     // MARK: - Private methods
     
     @objc private func timerDidFire(timer: NSTimer) {
-        self.tick++
+        tick++
         
-        self.tickAction?(self.tick)
+        tickAction?(tick)
     }
     
 }
