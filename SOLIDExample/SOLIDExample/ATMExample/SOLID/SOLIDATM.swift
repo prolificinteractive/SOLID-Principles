@@ -10,6 +10,4 @@ import Foundation
 
 protocol SOLIDATM: DepositUI, TransferUI, WithdrawalUI {
     
-    func informInsufficientFunds()
-    
 }

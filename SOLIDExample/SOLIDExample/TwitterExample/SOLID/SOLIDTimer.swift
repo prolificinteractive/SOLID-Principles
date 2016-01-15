@@ -20,6 +20,10 @@ class SOLIDTimer: Timer {
         self.tickAction = nil
     }
     
+    // MARK: - Protocol conformance
+    
+    // MARK: Timer
+    
     func onTick(action: Int -> ()) {
         tickAction = action
     }

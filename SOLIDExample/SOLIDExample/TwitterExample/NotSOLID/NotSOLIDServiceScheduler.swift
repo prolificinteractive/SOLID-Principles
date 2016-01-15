@@ -36,7 +36,7 @@ class NotSOLIDServiceScheduler: NSObject {
     
     @objc private func timerDidFire(timer: NSTimer) {
         timerTick++
-        runServicesWithTick(self.timerTick)
+        runServicesWithTick(timerTick)
     }
     
     // Responsibility: decides frequencies
@@ -52,11 +52,11 @@ class NotSOLIDServiceScheduler: NSObject {
     
     // Responsibility: Executes specific services
     private func runTimelineUpdateService() {
-        NotSOLIDTimelineService.fetchTimelineForUserID("123")
+        NotSOLIDTimelineService.fetchTimelineForUserID(userID)
     }
     
     private func runProfileUpdateService() {
-        NotSOLIDProfileService.fetchProfileForUserID("123")
+        NotSOLIDProfileService.fetchProfileForUserID(userID)
     }
     
 }

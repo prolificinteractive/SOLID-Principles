@@ -11,5 +11,6 @@ import Foundation
 protocol WithdrawalUI {
     
     func requestWithdrawalAmount()
+    func informInsufficientFunds()
     
 }

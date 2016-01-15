@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Twitter Example - SRP, OCP, DIP
         
-        let clientType: TwitterClientType = .SOLID
-        let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
-        
-        client.startScheduler()
+//        let clientType: TwitterClientType = .SOLID
+//        let client: Client = (clientType == .SOLID) ? SOLIDClient() : NotSOLIDClient()
+//        
+//        client.startScheduler()
 
         // Square/Rectangle Example - LSP
         
@@ -48,15 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ATM Example - ISP
         
-//        let atmUI = NotSOLIDConsoleATM()
-//        let depositTransaction1 = NotSOLIDDepositTransaction(ui: atmUI)
-//        
-//        depositTransaction1.execute()
-//        
-//        let depositUI = SOLIDDepositUI()
-//        let depositTransaction2 = SOLIDDepositTransaction(ui: depositUI)
-//        
-//        depositTransaction2.execute()
+        let atmUI = NotSOLIDConsoleATM()
+        let depositTransaction1 = NotSOLIDDepositTransaction(ui: atmUI)
+        
+        depositTransaction1.execute()
+        
+        let depositUI = SOLIDDepositUI()
+        let depositTransaction2 = SOLIDDepositTransaction(ui: depositUI)
+        
+        depositTransaction2.execute()
         
         return true
     }
