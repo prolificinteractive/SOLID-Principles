@@ -18,7 +18,9 @@ struct SOLIDTimelineService: Service {
         self.userID = userID
     }
     
-    // MARK: - Public methods
+    // MARK: - Protocol conformance
+    
+    // MARK: Service
     
     func frequency() -> Int {
         return freq

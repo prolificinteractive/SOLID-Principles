@@ -48,15 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ATM Example - ISP
         
-        let atmUI = NotSOLIDConsoleATM()
-        let depositTransaction1 = NotSOLIDDepositTransaction(ui: atmUI)
-        
-        depositTransaction1.execute()
-        
-        let depositUI = SOLIDDepositUI()
-        let depositTransaction2 = SOLIDDepositTransaction(ui: depositUI)
-        
-        depositTransaction2.execute()
+//        let atmUI = NotSOLIDConsoleATM()
+//        let depositTransaction1 = NotSOLIDDepositTransaction(ui: atmUI)
+//        
+//        depositTransaction1.execute()
+//        
+//        let depositUI = SOLIDDepositUI()
+//        let depositTransaction2 = SOLIDDepositTransaction(ui: depositUI)
+//        
+//        depositTransaction2.execute()
         
         return true
     }

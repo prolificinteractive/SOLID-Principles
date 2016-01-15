@@ -17,8 +17,9 @@ struct SOLIDProfileService: Service {
         self.freq = frequency
         self.userID = userID
     }
+    // MARK: - Protocol conformance
     
-    // MARK: - Public methods
+    // MARK: Service
     
     func frequency() -> Int {
         return freq
