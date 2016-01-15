@@ -1,8 +1,8 @@
-# SOLID & DRY
+# The SOLID Principles
 
 ## Description
 
-Reviewing the SOLID and DRY principles in Swift.
+Reviewing the SOLID principles with examples in Swift.
 
 ## Contributing
 
@@ -12,7 +12,7 @@ If you wish to contribute to the project, fork this repo and submit a pull reque
 
 ## Credits
 
-* [Practically SOLID](https://speakerdeck.com/dannyhertz/practically-solid-1) by Danny Hertz
+* Much inspiration was taken from [Practically SOLID](https://speakerdeck.com/dannyhertz/practically-solid-1) by Danny Hertz
 
 ## License
 
