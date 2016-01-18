@@ -4,7 +4,7 @@
 
 Reviewing the SOLID principles with examples in Swift.
 
-Presentation: [https://www.dropbox.com/s/39jhvd9379dl8hv/DevTalk_SOLID.key?dl=0](https://www.dropbox.com/s/39jhvd9379dl8hv/DevTalk_SOLID.key?dl=0)
+Presentation: [ https://www.dropbox.com/s/ykitib6kigkzeqt/DevTalk_SOLID.key?dl=0]( https://www.dropbox.com/s/ykitib6kigkzeqt/DevTalk_SOLID.key?dl=0)
 
 ## Credits
 
